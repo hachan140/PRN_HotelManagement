@@ -343,7 +343,7 @@ button {
 /** banner section **/
 
 .banner_main {
-     background: url(../images/banner.jpg);
+     background: url(../images/bg.jpg);
      background-repeat: no-repeat;
      min-height: 700px;
      display: flex;
@@ -840,7 +840,7 @@ button {
 .copyright {
      margin-top: 40px;
      padding: 20px 0px;
-     background-color: aquamarine;
+     background-color: midnightblue;
 }
 
 .copyright p {
