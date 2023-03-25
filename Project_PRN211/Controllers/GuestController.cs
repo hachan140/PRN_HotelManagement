@@ -142,6 +142,7 @@ namespace Project_PRN211.Controllers
                 {
                     b.GuestId = gu.GuestId;
                     b.Status = 0;
+                    
                     b.PaymentMode = "Cash";
                     context.Bills.Add(b);
                     context.SaveChanges();
