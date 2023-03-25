@@ -45,7 +45,7 @@ namespace Project_PRN211.Controllers
                         }
                     }
                     lstBill = context.Bills.Where(x => x.GuestId == g.GuestId).ToList();
-                    foreach(Bill bill in lstBill)
+                    foreach (Bill bill in lstBill)
                     {
                         if (bill.Status == 0)
                         {
@@ -66,7 +66,7 @@ namespace Project_PRN211.Controllers
                     //}
                     context.SaveChanges();
                 }
-                
+
                 using (var conte = new HotelManagementContext())
                 {
                     g.DepartureDate = DateTime.Now;
@@ -148,7 +148,8 @@ namespace Project_PRN211.Controllers
                 ViewBag.RomNO = para1;
                 ViewBag.users = em;
                 ViewBag.ok = 1;
-                return View("/Views/Bill/ViewBill.cshtml", b1);
+                //return View("/Views/Bill/ViewBill.cshtml", b1);
+                return RedirectToAction("Admin", "Home");
                 //return gu.Status + "" + "  " + gu.GuestId + "";
             }
         }
